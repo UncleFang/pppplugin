@@ -7,6 +7,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.bukkit.inventory.ItemStack;
 
@@ -56,9 +57,9 @@ public class Reader {
 	}
 
 	/**
-	 * 得到图标集合
+	 * 得到物品集合
 	 * 
-	 * @return 图标集合
+	 * @return 物品集合
 	 * @date 创建时间：2018年7月17日 下午5:48:57
 	 */
 	public static HashMap<String, ItemStack> readItems() {
@@ -230,5 +231,18 @@ public class Reader {
 			result.setElseResult(elseResult);
 		}
 		return result;
+	}
+
+	/**
+	 * 读取参数格式
+	 * 
+	 * @param 未处理参数格式
+	 * @return 参数格式
+	 * @date 创建时间：2018年7月19日 下午1:00:27
+	 */
+	public static HashMap<String, Object> getArgFormat(HashMap<String, Object> argFormat) {
+
+		return null;
+
 	}
 }
